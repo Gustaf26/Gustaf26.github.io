@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Programming Languages Quiz</h1>
+            <div class="score-board">
+                <span>Score: <strong id="score">0</strong></span>
+                <span>Question: <strong id="question-number">1</strong>/<strong id="total-questions">5</strong></span>
+            </div>
+        </header>
+
+        <div id="quiz-content">
+            <div id="options-container" class="options-container">
+                <!-- Options will be dynamically inserted -->
+            </div>
+            <button id="next-btn" onclick="nextQuestion()" class="btn btn-primary">Next Question</button>
+            <div id="question-text"></div>
+        </div>
+
+        <div id="results" class="results">
+            <h2>Quiz Completed!</h2>
+            <p>Your final score: <strong id="final-score">0</strong> out of <strong id="final-total">0</strong></p>
+            <p id="result-message"></p>
+            <button id="restart-btn" onclick="restartUI()" class="btn btn-primary">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
